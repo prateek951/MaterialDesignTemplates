@@ -10,16 +10,25 @@
  */
 
  app.controller('todoscontroller',function($scope,todosfactory){
-
-    $scope.todo = '';
-
+    
     var promise = todosfactory.servercall($scope);
 
     promise.then(function(data){
         $scope.todos = data.data.todos;
-        $scope.addTodo = function(){
-            $scope.todos.push($scope.todo);
-        }
+         
+        $scope.addTodo = function (todoToAdd) {
+             $scope.todos.push({name: todoToAdd});
+             Materialize.toast('Todo Added', 3000);
+             console.log($scope.todos);
+         }
+         $scope.deleteTodo = function(i){
+             $scope.todos.splice(i,1);
+             Materialize.toast('Todo removed',3000);
+             console.log($scope.todos);
+         }
+
     });
+
+    
 
  })
