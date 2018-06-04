@@ -120,7 +120,7 @@
             <h5><em>Latest Comments</em></h5>
           </li>
           <li class="collection-item avatar" ng-repeat="avatar in avatars">
-            <img ng-src="avatar.avatarImage" alt="" class="circle">
+            <img ng-src="{{avatar.avatarImage}}" alt="" class="circle">
             <span class="title">{{avatar.avatarTitle}}</span>
             <p class="truncate">{{avatar.avatarDescription}}</p>
             <!-- Approval link -->
