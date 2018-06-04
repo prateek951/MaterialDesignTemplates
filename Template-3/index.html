@@ -165,26 +165,20 @@
         <div class="card">
           <div class="card-content">
             <span class="card-title">Quick Todos</span>
-            <form id="todo-form">
+            <form id="todo-form" ng-submit="addTodo(todoToAdd)">
               <div class="input-field">
-                <input id="todo" type="text" placeholder="Add Todo..." ng-enter="addTodo()" ng-model="todo">
+                <input id="todo" placeholder="Add Todo..." ng-model="todoToAdd">
+                <!-- {{todoToAdd}} -->
               </div>
             </form>
             <ul class="collection todos">
-              <li class="collection-item" ng-repeat="todo in todos">
+              <li class="collection-item" ng-repeat="(index,todo) in todos">
                 <div>{{todo.name}}
-                  <a href="#!" class="secondary-content delete">
+                  <a href="#!" class="secondary-content delete" ng-click="deleteTodo(index)">
                     <i class="material-icons">close</i>
                   </a>
                 </div>
               </li>
-              <!-- <li class="collection-item">
-                <div>Todo Two
-                  <a href="#!" class="secondary-content delete">
-                    <i class="material-icons">close</i>
-                  </a>
-                </div>
-              </li> -->
             </ul>
           </div>
         </div>
@@ -192,7 +186,7 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer No controller required for the footer of the application-->
   <footer class="section black darken-2 white-text center">
     <p>AdminPanel Copyright &copy; 2018</p>
   </footer>
@@ -359,31 +353,6 @@
         });
         $('.deny').click(function (e) {
           Materialize.toast('Comment Denied', 3000);
-          e.preventDefault();
-        });
-
-        // Quick Todos
-        $('#todo-form').submit(function (e) {
-          const output = `<li class="collection-item">
-                <div>${$('#todo').val()}
-                  <a href="#!" class="secondary-content delete">
-                    <i class="material-icons">close</i>
-                  </a>
-                </div>
-              </li>`;
-
-          $('.todos').append(output);
-
-          Materialize.toast('Todo Added', 3000);
-
-          e.preventDefault();
-        });
-
-        // Delete Todos
-        $('.todos').on('click', '.delete', function (e) {
-          $(this).parent().parent().remove();
-          Materialize.toast('Todo Removed', 3000);
-
           e.preventDefault();
         });
 
