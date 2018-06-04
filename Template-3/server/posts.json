@@ -1,0 +1,16 @@
+{
+    "posts":[
+        {
+            "postname":"Post One",
+            "postdescription": "Web Development"
+        },
+        {
+            "postname": "Post Two",
+            "postdescription": "Graphic Design"
+        }, 
+        {
+            "postname": "Post Three",
+            "postdescription": "Web Development"
+        }
+    ]
+}

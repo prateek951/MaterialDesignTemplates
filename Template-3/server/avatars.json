@@ -1,0 +1,19 @@
+{
+    "avatars": [
+        {
+            "avatarImage": "img/person1.jpg",
+            "avatarTitle" : "Lorem Ipsum",
+            "avatarDescription": "Lorem ipsum dolor sit amet consectetur adipisicing eexplicabo pariatur maxime fuga sed quod quo voluptas, adipisci illum aspernatur est, fugit tempore."
+        },
+        {
+            "avatarImage": "img/person2.jpg",
+            "avatarTitle": "Lorem Ipsum",
+            "avatarDescription": "Lorem ipsum dolor sit amet consectetur adipisicing eexplicabo pariatur maxime fuga sed quod quo voluptas, adipisci illum aspernatur est, fugit tempore."
+        },
+        {
+            "avatarImage": "img/person3.jpg",
+            "avatarTitle": "Lorem Ipsum",
+            "avatarDescription": "Lorem ipsum dolor sit amet consectetur adipisicing eexplicabo pariatur maxime fuga sed quod quo voluptas, adipisci illum aspernatur est, fugit tempore."
+        }
+    ]
+}

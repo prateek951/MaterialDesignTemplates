@@ -1,0 +1,34 @@
+{
+
+    "statistics":[
+        {
+            "statemot": "insert_emoticon",
+            "statvisitors": "Monthly Visitors",
+            "statvisitorscount": 28300,
+            "isBlackContainer": true,
+            "widthOfContainer": "50%"
+        },
+        {
+            "statemot": "mode_edit",
+            "statvisitors": "Blog Posts",
+            "statvisitorscount": 105,
+            "isBlackContainer": false,
+            "widthOfContainer": "60%"
+        },
+        {
+            "statemot": "mode_comment",
+            "statvisitors": "Comments",
+            "statvisitorscount": 1200,
+            "isBlackContainer": true,
+            "widthOfContainer": "40%"
+        },
+        {
+            "statemot": "supervisor_account",
+            "statvisitors": "Users",
+            "statvisitorscount": 350,
+            "isBlackContainer": false,
+            "widthOfContainer": "80%"
+        }
+
+    ]
+}

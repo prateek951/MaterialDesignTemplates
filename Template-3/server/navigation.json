@@ -1,0 +1,25 @@
+{
+    "navbrand": "AdminPanel",
+    "navlinks": [
+        {
+            "navsource": "index.html",
+            "navitem": "Dashboard"
+        },
+        {
+            "navsource": "posts.html",
+            "navitem": "Posts"
+        },
+        {
+            "navsource": "categories.html",
+            "navitem": "Categories"
+        },
+        {
+            "navsource": "comments.html",
+            "navitem": "Comments"
+        },
+        {
+            "navsource": "users.html",
+            "navitem": "Users"
+        }
+    ]
+}
