@@ -1,93 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-  <link type="text/css" rel="stylesheet" href="css/main.css" />
-
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AdminPanel</title>
-</head>
-
-<body class="grey lighten-4">
-  <nav class="black darken-2">
-    <div class="container">
-      <div class="nav-wrapper">
-        <a href="index.html" class="brand-logo">AdminPanel</a>
-        <a href="#" data-activates="side-nav" class="button-collapse show-on-large right">
-          <i class="material-icons">menu</i>
-        </a>
-        <ul class="right hide-on-med-and-down">
-          <li>
-            <a href="index.html">Dashboard</a>`
-          </li>
-          <li>
-            <a href="posts.html">Posts</a>
-          </li>
-          <li>
-            <a href="categories.html">Categories</a>
-          </li>
-          <li class="active">
-            <a href="comments.html">Comments</a>
-          </li>
-          <li>
-            <a href="users.html">Users</a>
-          </li>
-        </ul>
-        <!-- Side nav -->
-        <ul id="side-nav" class="side-nav">
-          <li>
-            <div class="user-view">
-              <div class="background">
-                <img src="img/ocean.jpg" alt="">
-              </div>
-              <a href="#">
-                <img src="img/person1.jpg" alt="" class="circle">
-              </a>
-              <a href="#">
-                <span class="name white-text">Lorem ipsum</span>
-              </a>
-              <a href="#">
-                <span class="email white-text">loremipsum@gmail.com</span>
-              </a>
-            </div>
-          </li>
-          <li>
-            <a href="index.html">
-              <i class="material-icons">dashboard</i> Dashboard</a>
-          </li>
-          <li>
-            <a href="posts.html">Posts</a>
-          </li>
-          <li>
-            <a href="categories.html">Categories</a>
-          </li>
-          <li>
-            <a href="comments.html">Comments</a>
-          </li>
-          <li>
-            <a href="users.html">Users</a>
-          </li>
-          <li>
-            <div class="divider"></div>
-          </li>
-          <li>
-            <a class="subheader">Account Controls</a>
-          </li>
-          <li>
-            <a href="login.html" class="waves-effect">Logout</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
   <!-- Section: Comments -->
-  <section class="section section-comments grey lighten-4">
+  <section class="section section-comments grey lighten-4" ng-controller="commentscontroller">
     <div class="container">
       <div class="row">
         <div class="col s12">
@@ -96,58 +8,18 @@
               <span class="card-title">Comments</span>
               <table class="striped">
                 <tbody>
-                  <tr>
+                  <tr ng-repeat="comment in comments">
                     <td width="70">
-                      <img src="img/person1.jpg" alt="" class="responsive-img circle" style="width: 40px;margin-left:10px;">
+                      <img ng-src="{{comment.commentmaker}}" alt="" class="responsive-img circle" style="width: 40px;margin-left:10px;">
                     </td>
-                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, nostrum!</td>
+                    <td>{{comment.commentdescription}}</td>
                     <td>
-                      <a href="#!" class="green-text">
+                      <!-- Done button -->
+                      <a href="#" class="green-text">
                         <i class="material-icons">done</i>
                       </a>
-                      <a href="#!" class="red-text">
-                        <i class="material-icons">close</i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td width="70">
-                      <img src="img/person2.jpg" alt="" class="responsive-img circle" style="width: 40px;margin-left:10px;">
-                    </td>
-                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, nostrum!</td>
-                    <td>
-                      <a href="#!" class="green-text">
-                        <i class="material-icons">done</i>
-                      </a>
-                      <a href="#!" class="red-text">
-                        <i class="material-icons">close</i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td width="70">
-                      <img src="img/person3.jpg" alt="" class="responsive-img circle" style="width: 40px;margin-left:10px;">
-                    </td>
-                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, nostrum!</td>
-                    <td>
-                      <a href="#!" class="green-text">
-                        <i class="material-icons">done</i>
-                      </a>
-                      <a href="#!" class="red-text">
-                        <i class="material-icons">close</i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td width="70">
-                      <img src="img/person4.jpg" alt="" class="responsive-img circle" style="width: 40px;margin-left:10px;">
-                    </td>
-                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, nostrum!</td>
-                    <td>
-                      <a href="#!" class="green-text">
-                        <i class="material-icons">done</i>
-                      </a>
-                      <a href="#!" class="red-text">
+                      <!-- Close button -->
+                      <a href="#" class="red-text">
                         <i class="material-icons">close</i>
                       </a>
                     </td>
@@ -189,26 +61,7 @@
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="section black darken-2 white-text center">
-    <p>AdminPanel Copyright &copy; 2018</p>
-  </footer>
-
-  <!-- Preloader -->
-  <div class="loader preloader-wrapper big active">
-    <div class="spinner-layer spinner-blue-only">
-      <div class="circle-clipper left">
-        <div class="circle"></div>
-      </div>
-      <div class="gap-patch">
-        <div class="circle"></div>
-      </div>
-      <div class="circle-clipper right">
-        <div class="circle"></div>
-      </div>
-    </div>
-  </div>
+  
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
