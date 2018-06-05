@@ -1,1 +1,1 @@
-var app = angular.module('dashApp',[]);
+var app = angular.module('dashApp',['ngRoute']);
