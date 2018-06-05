@@ -17,14 +17,15 @@
         $scope.todos = data.data.todos;
          
         $scope.addTodo = function (todoToAdd) {
-             $scope.todos.push({name: todoToAdd});
+            $scope.todos.push({name: todoToAdd});
              Materialize.toast('Todo Added', 3000);
-//              console.log($scope.todos);
+             console.log($scope.todos);
+             $scope.todoToAdd = '';         
          }
          $scope.deleteTodo = function(i){
              $scope.todos.splice(i,1);
              Materialize.toast('Todo removed',3000);
-//              console.log($scope.todos);
+             console.log($scope.todos);
          }
 
     });
