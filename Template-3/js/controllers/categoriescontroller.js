@@ -3,7 +3,7 @@
 /**
  * @ngdoc overview
  * @name dashApp
- * @description
+ * @description Render the list of all the categories
  * # dashApp
  *
  * categoriesController of the Application
