@@ -1,0 +1,20 @@
+{
+    "categories":[
+        {
+            "name": "Web Development",
+            "date": "Jan 1, 2017"
+        },
+        {
+            "name": "Graphic Design",
+            "date": "Jan 1, 2017"
+        },
+        {
+            "name": "Tech Gadgets",
+            "date": "Jan 1, 2017"
+        },
+        {
+            "name": "Others",
+            "date": "Jan 1, 2017"
+        }
+    ]
+}

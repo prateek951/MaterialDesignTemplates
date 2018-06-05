@@ -1,0 +1,23 @@
+{
+    "comments": [{
+            "commentmaker": "img/person1.jpg",
+            "commentdescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, nostrum!"
+
+        },
+        {
+            "commentmaker": "img/person2.jpg",
+            "commentdescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, nostrum!"
+
+        },
+        {
+            "commentmaker": "img/person3.jpg",
+            "commentdescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, nostrum!"
+
+        },
+        {
+            "commentmaker": "img/person4.jpg",
+            "commentdescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, nostrum!"
+
+        }
+    ]
+}
