@@ -25,6 +25,18 @@ Open the project folder using VSCode and run it using live server extension.
 
 https://github.com/prateek951/MaterialDesignTemplates/issues/1
 
+# UHosting Site Template 
+
+https://github.com/prateek951/MaterialDesignTemplates/issues/2
+
+# Dashboard Template using Angularjs and MaterializeCSS Frontend
+
+https://github.com/prateek951/MaterialDesignTemplates/issues/3
+
+# RateMe Gallery Template using MaterializeCSS
+
+https://github.com/prateek951/MaterialDesignTemplates/issues/4
+
 ## License
 
 This project is licensed under the MIT License 
