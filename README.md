@@ -19,6 +19,12 @@ Open the project folder using VSCode and run it using live server extension.
 
 * **Prateek Madaaan** - *Initial work* - [Prateek Madaan](https://github.com/prateek951)
 
+## Templates Screenshots 
+
+# Travel Agency Template 1 
+
+https://github.com/prateek951/MaterialDesignTemplates/issues/1
+
 ## License
 
 This project is licensed under the MIT License 
